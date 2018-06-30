@@ -44,9 +44,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,-----------------------------------------------------------.
    * |'  |F1 |F2 |F3 |F4 |F5 |F6 |F7 |F8 |F9 |F10|F11|F12|DELETE |
    * |-----------------------------------------------------------|
-   * |     |   | ^ |   |   |   |RST|DBG|   |   |PSC|SLC|PAU|     |
+   * |     |NO | ^ |NO |   |   |RST|DBG|   |   |PSC|SLC|PAU|     |
    * |-----------------------------------------------------------|
-   * |      |<- | v |-> |   |   |   |   |   |INS|HOM|UP |        |
+   * |NO    |<- | v |-> |NO |   |   |   |   |INS|HOM|UP |        |
    * |-----------------------------------------------------------|
    * |        |   |   |BL-|BL+|BL |BBT|   |   |END|DWN|          |
    * |-----------------------------------------------------------|
@@ -58,14 +58,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_FL] = KEYMAP_ANSI(
   #ifdef RGBLIGHT_ENABLE
   KC_GRV ,KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,KC_6   ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,KC_F11 ,KC_F12 ,KC_DEL , \
-  _______,_______,KC_UP  ,_______,_______,_______,RESET  ,DEBUG  ,_______,_______,KC_PSCR,KC_SLCK,KC_PAUS,_______, \
-  _______,KC_LEFT,KC_DOWN,KC_RGHT,_______,_______,_______,_______,_______,KC_INS ,KC_HOME,KC_PGUP,        _______, \
+  _______,KC_NO  ,KC_UP  ,KC_NO  ,_______,_______,RESET  ,DEBUG  ,_______,_______,KC_PSCR,KC_SLCK,KC_PAUS,_______, \
+  KC_NO  ,KC_LEFT,KC_DOWN,KC_RGHT,KC_NO  ,_______,_______,_______,_______,KC_INS ,KC_HOME,KC_PGUP,        _______, \
   _______,        _______,_______,BL_DEC ,BL_INC ,BL_TOGG,BL_BRTG,_______,_______,KC_END ,KC_PGDOWN,      _______, \
   _______,_______,_______,                _______,                                _______,_______,_______,_______),
   #else
   KC_GRV ,KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,KC_6   ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,KC_F11 ,KC_F12 ,KC_DEL , \
-  _______,_______,KC_UP  ,_______,_______,_______,RESET  ,DEBUG  ,_______,_______,KC_PSCR,KC_SLCK,KC_PAUS,_______, \
-  _______,KC_LEFT,KC_DOWN,KC_RGHT,_______,_______,_______,_______,_______,KC_INS ,KC_HOME,KC_PGUP,        _______, \
+  _______,KC_NO  ,KC_UP  ,KC_NO  ,_______,_______,RESET  ,DEBUG  ,_______,_______,KC_PSCR,KC_SLCK,KC_PAUS,_______, \
+  KC_NO  ,KC_LEFT,KC_DOWN,KC_RGHT,KC_NO  ,_______,_______,_______,_______,KC_INS ,KC_HOME,KC_PGUP,        _______, \
   _______,        _______,_______,BL_DEC ,BL_INC ,BL_TOGG,BL_BRTG,_______,_______,KC_END ,KC_PGDOWN,      _______, \
   _______,_______,_______,                _______,                                _______,_______,_______,_______),
   #endif
