@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AUDIO_ENABLE	rules.mk	/^AUDIO_ENABLE = no           # Audio output on port C6$/;"	m
+BACKLIGHT_BREATHING	config.h	23;"	d
+BACKLIGHT_ENABLE	rules.mk	/^BACKLIGHT_ENABLE = yes       # Enable keyboard backlight functionality$/;"	m
+BLUETOOTH_ENABLE	rules.mk	/^BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID$/;"	m
+BOOTLOADER	rules.mk	/^BOOTLOADER = atmel-dfu$/;"	m
+BOOTMAGIC_ENABLE	rules.mk	/^BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration(+1000)$/;"	m
+BREATHING_PERIOD	config.h	24;"	d
+COMMAND_ENABLE	rules.mk	/^COMMAND_ENABLE = yes        # Commands for debug and configuration$/;"	m
+CONFIG_H	config.h	19;"	d
+CONSOLE_ENABLE	rules.mk	/^CONSOLE_ENABLE = no         # Console for debug(+400)$/;"	m
+EXTRAKEY_ENABLE	rules.mk	/^EXTRAKEY_ENABLE = yes       # Audio control and System control(+450)$/;"	m
+MIDI_ENABLE	rules.mk	/^MIDI_ENABLE = no            # MIDI controls$/;"	m
+MODS_CTRL_MASK	keymap.c	6;"	d	file:
+MOUSEKEY_ENABLE	rules.mk	/^MOUSEKEY_ENABLE = yes       # Mouse keys(+4700)$/;"	m
+NKRO_ENABLE	rules.mk	/^NKRO_ENABLE = yes           # Nkey Rollover - if this doesn't work, see here: https:\/\/github.com\/tmk\/tmk_keyboard\/wiki\/FAQ#nkro-doesnt-work$/;"	m
+RGBLIGHT_ENABLE	rules.mk	/^RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight.  Do not enable this with audio at the same time.$/;"	m
+SHIFT_ESC	keymap.c	/^    SHIFT_ESC,$/;"	e	enum:function_id	file:
+SLEEP_LED_ENABLE	rules.mk	/^SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend$/;"	m
+UNICODE_ENABLE	rules.mk	/^UNICODE_ENABLE = no         # Unicode$/;"	m
+_BL	keymap.c	12;"	d	file:
+_FL	keymap.c	13;"	d	file:
+_______	keymap.c	15;"	d	file:
+action_function	keymap.c	/^void action_function(keyrecord_t *record, uint8_t id, uint8_t opt) {$/;"	f
+fn_actions	keymap.c	/^const uint16_t PROGMEM fn_actions[] = {$/;"	v
+function_id	keymap.c	/^enum function_id {$/;"	g	file:
+keymaps	keymap.c	/^const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {$/;"	v
+layer_state_set_user	keymap.c	/^uint32_t layer_state_set_user(uint32_t state)$/;"	f
