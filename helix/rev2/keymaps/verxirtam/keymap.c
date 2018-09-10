@@ -336,6 +336,23 @@ void update_tri_layer_RGB(uint8_t layer1, uint8_t layer2, uint8_t layer3) {
   }
 }
 
+//process_record_user()
+// uint16_t keycode キーコード
+// keyrecord_t *record keycodeのキーの押下状態
+//	
+//	keyrecord_t record
+//	{
+//		keyevent_t event
+//		{
+//			keypos_t key
+//			{
+//				uint8_t col		//列番号
+//				uint8_t row		//行番号
+//			}
+//			bool pressed		//押下状態
+//			uint16_t time		//キーを押した時刻
+//		}
+//	}
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case QWERTY:
